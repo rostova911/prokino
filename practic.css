@@ -1,0 +1,427 @@
+body{ 
+margin:0;
+background-color: #000000;}
+
+p{
+color: #ffffff;
+font-family: 'Ysabeau Infant', sans-serif;
+font-family: 'Ysabeau SC', sans-serif;
+font-size: 18px;}
+
+.rate {
+background: #00a028;
+padding: 0 10px;
+border-radius: 5px;}
+
+
+/*ШАПКА*/
+header{
+display: flex;
+align-items: center;
+margin-top: 15px;
+height: 80px;
+width: 1518px;
+background-color: rgb(0, 0, 0);
+box-shadow:  0 0 15px 13px #f60df2;}
+
+.prokino{
+white-space: nowrap;} 
+
+/*меню всплывающее*/
+.menupicnav{
+display: flex; 
+margin-left: 43px;
+align-items: center;
+gap:20px;
+padding: 20px;}
+
+.menupicnav:hover ul {
+display: block;}
+
+li:hover{
+background-color: rgba(198, 74, 207, 0.414);}
+
+.list {
+position: absolute;
+display: none;
+color: #ffffff;
+list-style: none;
+margin-left: -40px;
+margin-top: 280px;}   
+
+li {
+background-color: rgba(87, 76, 86, 0.252);
+width: 230px;
+height: 45px;
+padding-top: 15px;
+text-align: center;
+font-family: 'Ysabeau Infant', sans-serif;}
+
+
+/*Блок CINEMAHOLIC*/
+.header_title {
+margin-left: 1000px;
+display: flex;
+gap: 10px;}
+
+/*CINEMAHOLIC текст*/
+.header_text{ 
+font-family: 'Ysabeau Infant', sans-serif;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #ffffff;
+color: #000000;
+font-size: 40px;
+padding-bottom: 10px;
+text-shadow:
+            0 0 10px #f60df2,
+            0 0 15px #f60df2,
+            0 0 20px #f60df2,
+            0 0 25px #f60df2,
+            0 0 30px #f60df2,
+            0 0 40px #f60df2;}
+
+/*CINEMAHOLIC иконка*/
+.header_icon{ 
+display: flex;
+align-items: center;}
+
+
+/*Фиксированная иконка попкорн*/
+.picfilm{
+position: fixed;
+left:30px;
+bottom: 30px;
+z-index: 10;}
+
+
+/*Первый блок*/
+.block1{ 
+display: flex;
+align-items: center;
+background-color: #000000;
+margin-top: 120px;
+width: 600px;
+margin-left: 850px;}
+
+   
+
+/*Второй блок фиксированный бекграунд*/
+.fixedbackground { 
+background: url('https://i.pinimg.com/originals/fc/1e/5e/fc1e5ef5fe1bfffdbc3582d1c3532149.jpg');
+background-attachment: fixed;
+margin-top: 100px;
+height:500px;
+width: 1500px;}   
+
+
+
+/*ЛЮБИМЫЕ СЕРИАЛЫ*/
+.favseries { 
+display: flex;
+justify-content: center;
+box-shadow: 0 0 15px 8px #150df6;
+width: 1000px;
+margin-left: 270px;
+margin-top: 80px;
+color: #ffffff;
+font-family: 'Ysabeau Infant', sans-serif;
+font-family: 'Ysabeau SC', sans-serif;
+padding: 8px ;
+font-size: 20px;}
+
+
+/*Очень странные дела блок*/
+.strangerthings{
+display: flex;
+justify-content: space-between;
+width: 1350px;
+margin-top: 100px;
+margin-left:90px ;}
+
+.STpic { 
+display: flex;}
+
+.STtext {
+display: flex;
+flex-wrap: wrap;
+align-content: space-between;
+width: 650px;}
+
+
+
+/*Аудио и картинки*/
+.audio {
+display: block;
+margin-top: 100px;
+margin-left: 570px;}
+
+.STpictures {
+display: flex;
+width:1100px;
+flex-wrap: wrap;
+gap:10px;
+margin-top: 20px;
+margin-left: 270px;}
+
+.STpicsopen:hover {
+cursor: pointer;}
+.STpicsopen:active {
+transform: scale(3.3); }
+
+.STcitation { 
+display: flex;
+justify-content: start;
+margin-left: 260px;
+width: 500px;
+margin-top: 100px;
+font-size: 18px;}
+  
+
+/*Разделитель 1*/       
+.polosa{
+height: 10px;
+box-shadow: 0 0 15px 8px  #150df6;
+width:1400px;
+margin-top:200px;
+margin-bottom: 100px;}   
+
+
+/*ТЬМА*/
+.thedark{
+display: flex;
+justify-content: space-evenly;
+width:1500px;}
+
+.TDtext {
+display: flex;
+flex-wrap: wrap;
+align-content: space-evenly;
+width: 800px;
+margin-left: 40px;}    
+
+.TDposter {
+display: flex;
+margin-right: 30px;}
+
+.TDslogan {
+display: flex;
+justify-content: start;
+margin-left: 260px;
+width: 500px;
+margin-top: 50px;}    
+   
+.TDpictures {
+display: flex;
+width:1100px;
+flex-wrap: wrap;
+gap:10px;
+margin-top: 20px;
+margin-left: 270px;}  
+
+.TDpicsopen:hover {
+cursor: pointer;}  
+.TDpicsopen:active{
+transform:scale(3.3);}
+    
+.polosa2 {
+height: 10px;
+box-shadow: 0 0 15px 8px  #150df6;
+width:1408px;
+margin-top:200px;
+margin-bottom: 100px;
+margin-left: 110px;}
+
+/*БЫВАЕТ И ХУЖЕ*/
+.middle {
+display: flex;
+justify-content: space-between;
+width: 1350px;
+margin-top: 150px;
+margin-left:90px ;}
+
+.middleposter{
+display: flex;}
+
+.middletext {
+display: flex;
+flex-wrap: wrap;
+align-content: space-between;
+width: 650px;
+margin-left: 40px;}
+
+.middleslogan {
+display: flex;
+width:600px;
+margin-top: 70px;
+margin-left: 260px;}    
+
+.Middlepictures {
+display: flex;
+width:1200px;
+flex-wrap: wrap;
+gap:10px;
+margin-left: 270px;
+margin-top: 20px;}
+
+.Mpicsopen:hover {
+cursor: pointer;}
+.Mpicsopen:active{
+transform:scale(3.3);}
+
+
+/*Разделитель 3*/       
+.polosa3{
+height: 10px;
+box-shadow: 0 0 15px 8px  #150df6;
+width:1400px;
+margin-top:200px;
+margin-bottom: 100px;}   
+
+
+/*Даунтон*/  
+.daunton{
+display: flex;
+justify-content: space-between;
+width:1350px;
+margin-left: 90px;
+margin-top: 150px;}
+    
+.dauntontext {
+display: flex;
+flex-wrap: wrap;
+align-content: space-evenly;
+width: 800px;}
+
+.dauntonposter {
+display: flex; }
+    
+.dauntonslogan {
+display: flex;
+justify-content: start;
+margin-left: 260px;
+width: 500px;
+margin-top: 50px;}        
+
+.dauntonpictures {
+display: flex;
+width:1200px;
+flex-wrap: wrap;
+gap:10px;
+margin-left: 270px;
+margin-top: 20px;}
+        
+.dauntonpicsopen:hover {
+cursor: pointer;}
+.dauntonpicsopen:active{
+transform:scale(3.3);}    
+
+/*ЛЮБИМЫЕ актеры*/
+.favactors{
+display: flex;
+justify-content: center;
+box-shadow: 0 0 15px 8px #e90505;
+width: 1300px;
+margin-left: 100px;
+margin-top: 300px;
+margin-bottom:100px ;
+color: #ffffff;
+font-family: 'Ysabeau Infant', sans-serif;
+font-family: 'Ysabeau SC', sans-serif;
+padding: 8px ;
+font-size: 20px;}
+
+.actors6{
+display: grid;
+grid-template-columns: auto auto auto;
+width: 1200px;
+margin-left: 200px;
+margin-top: 200px;
+gap: 100px;}
+
+.actorimg {
+display: block;
+align-content: center;
+width: 250px;
+height: 300px;
+overflow: hidden;}
+
+.actorimg:hover{
+transform: scale(1.1);
+cursor: pointer;}  
+
+.hollywood{
+display: flex;
+justify-content: center;
+box-shadow: 0 0 15px 8px #dbf60d;
+width: 1300px;
+margin-left: 100px;
+margin-top: 300px;
+margin-bottom:100px ;
+color: #ffffff;
+font-family: 'Ysabeau Infant', sans-serif;
+font-family: 'Ysabeau SC', sans-serif;
+padding: 8px ;
+font-size: 20px; }
+
+.hollypic1{
+display:block;
+width:1518px;
+height: 300px;
+overflow: hidden;}
+
+.hollypic1 img{
+margin-top:-300px;}
+
+.hollyp{
+width:800px;
+margin-left: 550px;}
+
+.hollyp2{
+margin-left: 130px;
+margin-right: 100px;}
+
+.alleya{
+display: flex;
+justify-content: space-between;
+margin-left:280px;
+margin-top: 100px;
+width: 1000px;
+gap:55px;}
+
+.history{
+width:1300px;
+margin-left: 130px;
+margin-right: 100px;
+margin-top: 80px;}
+
+.history img{ 
+float: left;
+margin-right: 20px;}
+
+footer{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 80px;
+width:1518px;
+height: 110px;
+box-shadow: 0 0 15px 8px #dbf60d;}
+
+.anchor {
+color:#ffffff;
+text-decoration: none;}
+
+.up {
+font-family: 'Ysabeau Infant', sans-serif;
+font-size: 18px;
+position: fixed;
+right: 40px;
+bottom: 30px;
+color:#7e7d7d55;
+text-decoration: none;}
+
+.up:hover{
+color:#bdbbbb55;}
+
+figcaption p{
+width:500px;}
