@@ -130,6 +130,35 @@ padding: 8px ;
 font-size: 20px;}
 
 
+/*Аудио и картинки*/
+.audio {
+    display: block;
+    margin-top: 100px;
+    margin-left: 570px;}
+    
+    .PicturesBlock {
+        display: flex;
+        width:1100px;
+        flex-wrap: wrap;
+        gap:10px;
+        margin-top: 20px;
+        margin-left: 270px;
+    }
+    .PicturesInB{
+        display: block;
+        width: 200px;
+        height: 120px;
+        overflow: hidden;
+        }
+    
+    .PicturesInB:hover {
+    cursor: pointer;
+    transform: scale(1.3);}
+    .PicturesInB:active {
+    transform: scale(3.3);
+    }
+
+
 /*Очень странные дела блок*/
 .strangerthings{
 display: flex;
@@ -149,25 +178,6 @@ width: 650px;}
 
 
 
-/*Аудио и картинки*/
-.audio {
-display: block;
-margin-top: 100px;
-margin-left: 570px;}
-
-.STpictures {
-display: flex;
-width:1100px;
-flex-wrap: wrap;
-gap:10px;
-margin-top: 20px;
-margin-left: 270px;}
-
-.STpicsopen:hover {
-cursor: pointer;}
-.STpicsopen:active {
-transform: scale(3.3); }
-
 .STcitation { 
 display: flex;
 justify-content: start;
@@ -181,7 +191,7 @@ font-size: 18px;}
 .polosa{
 height: 10px;
 box-shadow: 0 0 15px 8px  #150df6;
-width:1400px;
+width:1200px;
 margin-top:200px;
 margin-bottom: 100px;}   
 
@@ -210,26 +220,14 @@ margin-left: 260px;
 width: 500px;
 margin-top: 50px;}    
    
-.TDpictures {
-display: flex;
-width:1100px;
-flex-wrap: wrap;
-gap:10px;
-margin-top: 20px;
-margin-left: 270px;}  
-
-.TDpicsopen:hover {
-cursor: pointer;}  
-.TDpicsopen:active{
-transform:scale(3.3);}
     
 .polosa2 {
 height: 10px;
 box-shadow: 0 0 15px 8px  #150df6;
-width:1408px;
+width:1208px;
 margin-top:200px;
 margin-bottom: 100px;
-margin-left: 110px;}
+margin-left: 310px;}
 
 /*БЫВАЕТ И ХУЖЕ*/
 .middle {
@@ -255,25 +253,15 @@ width:600px;
 margin-top: 70px;
 margin-left: 260px;}    
 
-.Middlepictures {
-display: flex;
-width:1200px;
-flex-wrap: wrap;
-gap:10px;
-margin-left: 270px;
-margin-top: 20px;}
 
-.Mpicsopen:hover {
-cursor: pointer;}
-.Mpicsopen:active{
-transform:scale(3.3);}
+
 
 
 /*Разделитель 3*/       
 .polosa3{
 height: 10px;
 box-shadow: 0 0 15px 8px  #150df6;
-width:1400px;
+width:1200px;
 margin-top:200px;
 margin-bottom: 100px;}   
 
@@ -302,18 +290,7 @@ margin-left: 260px;
 width: 500px;
 margin-top: 50px;}        
 
-.dauntonpictures {
-display: flex;
-width:1200px;
-flex-wrap: wrap;
-gap:10px;
-margin-left: 270px;
-margin-top: 20px;}
-        
-.dauntonpicsopen:hover {
-cursor: pointer;}
-.dauntonpicsopen:active{
-transform:scale(3.3);}    
+   
 
 /*ЛЮБИМЫЕ актеры*/
 .favactors{
