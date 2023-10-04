@@ -117,13 +117,13 @@ width: 600px;
 margin-left: 850px;}
 
 
-                /*Второй блок фиксированный бекграунд*/
+                /*фиксированный бекграунд*/
 .fix__background { 
 background: url('https://i.pinimg.com/originals/fc/1e/5e/fc1e5ef5fe1bfffdbc3582d1c3532149.jpg');
 background-attachment: fixed;
 margin-top: 100px;
 height:500px;
-width: 1500px;}   
+width: 1518px;}   
 
 
                 /*блок ЛЮБИМЫЕ СЕРИАЛЫ*/
@@ -308,17 +308,46 @@ grid-template-columns: auto auto auto;
 width: 1200px;
 margin-left: 200px;
 margin-top: 200px;
-gap: 100px;}
+gap: 100px;
+}
 
 .actors__img {
 display: block;
 align-content: center;
 width: 250px;
 height: 300px;
-overflow: hidden;}
+overflow: hidden;
+}
     .actors__img:hover{
     transform: scale(1.1);
-    cursor: pointer;}  
+    cursor: pointer;} 
+
+.JD{color: #ffffff;
+    } 
+
+
+            /*Таблица*/
+.table {
+    display: block;
+    margin-left:130px;
+    margin-top: 120px;
+}
+
+table, th, td, tr { 
+width: 1250px;
+border: 4px solid rgb(0, 0, 0); 
+border-collapse: collapse;    
+padding:3px;
+text-align: center;
+color:#ffffff;
+font-size: 18px;
+font-family: 'Ysabeau Infant', sans-serif;
+}
+        th{background-color: #830000; 
+}
+        td{background-color: #131212;  
+}
+
 
             /*Голливуд*/
 .hollywood{
