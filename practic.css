@@ -15,7 +15,7 @@ border-radius: 5px;}
 
 
 
-/*ШАПКА*/
+            /*ШАПКА*/
 header{
 display: flex;
 align-items: center;
@@ -25,50 +25,51 @@ width: 1518px;
 background-color: rgb(0, 0, 0);
 box-shadow:  0 0 15px 13px #f60df2;}
 
-.prokino{
-white-space: nowrap;} 
 
 
-/*меню всплывающее*/
-.menupicnav{
+            /*Шапка левый блок*/
+.menu{
 display: flex; 
 margin-left: 43px;
 align-items: center;
 gap:20px;
 padding: 20px;}
+    .menu:hover ul {
+    display: block;}
 
-.menupicnav:hover ul {
-display: block;}
-
-li:hover{
-background-color: rgba(198, 74, 207, 0.414);}
-
-.list {
+.menu__list {
 position: absolute;
 display: none;
 color: #ffffff;
 list-style: none;
 margin-left: -40px;
 margin-top: 280px;}   
+    li {
+    background-color: rgba(87, 76, 86, 0.252);
+    width: 230px;
+    height: 45px;
+    padding-top: 15px;
+    text-align: center;
+    font-family: 'Ysabeau Infant', sans-serif;}
+    li:hover{
+    background-color: rgba(198, 74, 207, 0.414);}
 
-li {
-background-color: rgba(87, 76, 86, 0.252);
-width: 230px;
-height: 45px;
-padding-top: 15px;
-text-align: center;
-font-family: 'Ysabeau Infant', sans-serif;}
+.anchor {
+ color:#ffffff;
+text-decoration: none;}    
+    
+
+.header__pro__kino{
+white-space: nowrap;} 
 
 
-/*Блок CINEMAHOLIC*/
-.header_title {
+                /*Шапка правый блок*/
+.header__logo {
 margin-left: 1000px;
 display: flex;
 gap: 10px;}
 
-
-/*CINEMAHOLIC текст*/
-.header_text{ 
+.header__text{ 
 font-family: 'Ysabeau Infant', sans-serif;
 -webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color: #ffffff;
@@ -83,23 +84,31 @@ text-shadow:
             0 0 30px #f60df2,
             0 0 40px #f60df2;}
 
-
-/*CINEMAHOLIC иконка*/
-.header_icon{ 
+.header__icon{ 
 display: flex;
 align-items: center;}
 
-
-/*Фиксированная иконка попкорн*/
-.picfilm{
+                /*Фиксированная иконка попкорн*/
+.fixed__icon__popcorn{
 position: fixed;
 left:30px;
 bottom: 30px;
 z-index: 10;}
+               /*якорь НАВЕРХ*/
+.up {
+font-family: 'Ysabeau Infant', sans-serif;
+font-size: 18px;
+position: fixed;
+right: 40px;
+bottom: 30px;
+color:#f0f1f5e7;
+text-decoration: none;}
+    .up:hover{
+    color:#a7a7a8be;}
 
 
-/*Первый блок*/
-.block1{ 
+                /*Первый блок цитата*/
+.main__quote{ 
 display: flex;
 align-items: center;
 background-color: #000000;
@@ -108,8 +117,8 @@ width: 600px;
 margin-left: 850px;}
 
 
-/*Второй блок фиксированный бекграунд*/
-.fixedbackground { 
+                /*Второй блок фиксированный бекграунд*/
+.fix__background { 
 background: url('https://i.pinimg.com/originals/fc/1e/5e/fc1e5ef5fe1bfffdbc3582d1c3532149.jpg');
 background-attachment: fixed;
 margin-top: 100px;
@@ -117,8 +126,8 @@ height:500px;
 width: 1500px;}   
 
 
-/*ЛЮБИМЫЕ СЕРИАЛЫ*/
-.favseries { 
+                /*блок ЛЮБИМЫЕ СЕРИАЛЫ*/
+.title__fav__series { 
 display: flex;
 justify-content: center;
 box-shadow: 0 0 15px 8px #150df6;
@@ -132,99 +141,140 @@ padding: 8px ;
 font-size: 20px;}
 
 
-/*Аудио и картинки*/
-.audio {
-display: block;
-margin-top: 100px;
-margin-left: 570px;}
-    
-.PicturesBlock {
-display: flex;
-width:1100px;
-flex-wrap: wrap;
-gap:10px;
-margin-top: 20px;
-margin-left: 270px;
-}
-.PicturesInB{
-display: block;
-width: 200px;
-height: 120px;
-overflow: hidden;
-}
-    
-.PicturesInB:hover {
-cursor: pointer;
-transform: scale(1.3);}
-
-.PicturesInB:active {
-transform: scale(3.3);
-}
-
-
-/*Очень странные дела блок*/
-.strangerthings{
+                /*Очень странные дела*/
+.stranger__things{
 display: flex;
 justify-content: space-between;
 width: 1350px;
 margin-top: 100px;
 margin-left:90px ;}
 
-.STpic { 
+.stranger__things__poster { 
 display: flex;}
 
-.STtext {
+.stranger__things__text {
 display: flex;
 flex-wrap: wrap;
 align-content: space-between;
-width: 650px;}
-
-.STcitation { 
-display: flex;
-justify-content: start;
-margin-left: 260px;
-width: 500px;
-margin-top: 100px;
-font-size: 18px;}
-  
+width: 650px;
+text-align: justify;}
 
 
-/*Разделитель 1*/       
-.polosa{
-height: 10px;
-box-shadow: 0 0 15px 8px  #150df6;
-width:1200px;
-margin-top:200px;
-margin-bottom: 100px;}   
-
-
-/*ТЬМА*/
+            /*ТЬМА*/
 .thedark{
 display: flex;
 justify-content: space-evenly;
 width:1500px;}
 
-.TDtext {
+.thedark__text {
 display: flex;
 flex-wrap: wrap;
 align-content: space-evenly;
 width: 800px;
-margin-left: 40px;}    
+margin-left: 40px;
+text-align: justify;}    
 
-.TDposter {
+.thedark__poster {
 display: flex;
 margin-right: 30px;}
 
-.TDslogan {
+
+
+            /*БЫВАЕТ И ХУЖЕ*/
+.middle {
 display: flex;
-justify-content: start;
-margin-left: 260px;
-width: 500px;
-margin-top: 50px;}    
+justify-content: space-between;
+width: 1350px;
+margin-top: 150px;
+margin-left:90px ;}
+
+.middle__poster{
+display: flex;}
+
+.middle__text {
+display: flex;
+flex-wrap: wrap;
+text-align: justify;
+align-content: space-between;
+width: 650px;
+margin-left: 40px;
+}
    
 
+
+
+            /*Даунтон*/  
+.daunton{
+display: flex;
+justify-content: space-between;
+width:1350px;
+margin-left: 90px;
+margin-top: 150px;}
     
-.polosa2 {
+.daunton__text {
+display: flex;
+flex-wrap: wrap;
+align-content: space-evenly;
+width: 800px;
+text-align: justify;}
+
+.daunton__poster {
+display: flex; }
+     
+           
+            /*Слоганы*/
+.slogans { 
+    display: flex;
+    justify-content: start;
+    margin-left: 260px;
+    width: 800px;
+    margin-top: 100px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+            /*Блоки Аудио и Кадры*/
+
+.audio {
+display: block;
+margin-top: 100px;
+margin-left: 570px;}
+
+figcaption p{
+width:500px;}
+        
+.Pictures {
+display: flex;
+width:1100px;
+flex-wrap: wrap;
+gap:10px;
+margin-top: 20px;
+margin-left: 240px;
+}
+    .Pictures__img{
+    display: block;
+    width: 200px;
+    height: 120px;
+    overflow: hidden;
+    }
+    .Pictures__img:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+    .Pictures__img:active {
+    transform: scale(3.3);
+    }
+
+                /*Полосы разделения*/   
+
+.left__streak{
+height: 10px;
+box-shadow: 0 0 15px 8px  #150df6;
+width:1200px;
+margin-top:200px;
+margin-bottom: 100px;} 
+
+.right__streak{
 height: 10px;
 box-shadow: 0 0 15px 8px  #150df6;
 width:1208px;
@@ -233,70 +283,11 @@ margin-bottom: 100px;
 margin-left: 310px;}
 
 
-/*БЫВАЕТ И ХУЖЕ*/
-.middle {
-display: flex;
-justify-content: space-between;
-width: 1350px;
-margin-top: 150px;
-margin-left:90px ;}
-
-.middleposter{
-display: flex;}
-
-.middletext {
-display: flex;
-flex-wrap: wrap;
-align-content: space-between;
-width: 650px;
-margin-left: 40px;}
-
-.middleslogan {
-display: flex;
-width:600px;
-margin-top: 70px;
-margin-left: 260px;}    
-
-
-
-/*Разделитель 3*/       
-.polosa3{
-height: 10px;
-box-shadow: 0 0 15px 8px  #150df6;
-width:1200px;
-margin-top:200px;
-margin-bottom: 100px;}   
-
-
-
-/*Даунтон*/  
-.daunton{
-display: flex;
-justify-content: space-between;
-width:1350px;
-margin-left: 90px;
-margin-top: 150px;}
-    
-.dauntontext {
-display: flex;
-flex-wrap: wrap;
-align-content: space-evenly;
-width: 800px;}
-
-.dauntonposter {
-display: flex; }
-    
-.dauntonslogan {
-display: flex;
-justify-content: start;
-margin-left: 260px;
-width: 500px;
-margin-top: 50px;}        
 
    
 
-/*ЛЮБИМЫЕ актеры*/
-.favactors{
+                /*ЛЮБИМЫЕ актеры title*/
+.actors__title{
 display: flex;
 justify-content: center;
 box-shadow: 0 0 15px 8px #e90505;
@@ -310,7 +301,8 @@ font-family: 'Ysabeau SC', sans-serif;
 padding: 8px ;
 font-size: 20px;}
 
-.actors6{
+                /*GRID актеры*/
+.actors__grid{
 display: grid;
 grid-template-columns: auto auto auto;
 width: 1200px;
@@ -318,17 +310,17 @@ margin-left: 200px;
 margin-top: 200px;
 gap: 100px;}
 
-.actorimg {
+.actors__img {
 display: block;
 align-content: center;
 width: 250px;
 height: 300px;
 overflow: hidden;}
+    .actors__img:hover{
+    transform: scale(1.1);
+    cursor: pointer;}  
 
-.actorimg:hover{
-transform: scale(1.1);
-cursor: pointer;}  
-
+            /*Голливуд*/
 .hollywood{
 display: flex;
 justify-content: center;
@@ -343,24 +335,21 @@ font-family: 'Ysabeau SC', sans-serif;
 padding: 8px ;
 font-size: 20px; }
 
-.hollypic1{
+.hollywood__pic{
 display:block;
 width:1518px;
 height: 300px;
 overflow: hidden;}
 
-.hollypic1 img{
+.hollywood__pic img{
 margin-top:-300px;}
 
-.hollyp{
+.hollywood__p{
 width:800px;
 margin-left: 550px;}
 
-.hollyp2{
-margin-left: 130px;
-margin-right: 100px;}
-
-.alleya{
+                /*Аллея славы*/
+.alley{
 display: flex;
 justify-content: space-between;
 margin-left:280px;
@@ -368,16 +357,23 @@ margin-top: 100px;
 width: 1000px;
 gap:55px;}
 
+
+                /*История*/
 .history{
 width:1300px;
 margin-left: 130px;
 margin-right: 100px;
 margin-top: 80px;}
 
+.history p{
+    text-align: justify;
+}
+
 .history img{ 
 float: left;
 margin-right: 20px;}
 
+                /*Футер*/
 footer{
 display: flex;
 justify-content: center;
@@ -387,21 +383,7 @@ width:1518px;
 height: 110px;
 box-shadow: 0 0 15px 8px #dbf60d;}
 
-.anchor {
-color:#ffffff;
-text-decoration: none;}
 
-.up {
-font-family: 'Ysabeau Infant', sans-serif;
-font-size: 18px;
-position: fixed;
-right: 40px;
-bottom: 30px;
-color:#f0f1f5e7;
-text-decoration: none;}
 
-.up:hover{
-color:#a7a7a8be;}
 
-figcaption p{
-width:500px;}
+
